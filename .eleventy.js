@@ -1,3 +1,4 @@
+const htmlmin = require('html-minifier');
 const yaml = require('js-yaml');
 
 /**
@@ -19,6 +20,21 @@ module.exports = (config) => {
 
     // Watch assets built by webpack
     config.addWatchTarget('./src/build/');
+  }
+
+  if (process.env.ELEVENTY_ENV === 'production') {
+    // Minify HTML
+    config.addTransform('htmlmin', function (content, outputPath) {
+      if (outputPath.endsWith('.html')) {
+        return htmlmin.minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true
+        });
+      } else {
+        return content;
+      }
+    });
   }
 
   return {
