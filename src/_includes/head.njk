@@ -2,6 +2,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  {% if build.environment == 'production' %}
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; img-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com;">
+  {% endif %}
+
   <link rel="icon" href="/images/favicon.svg">
 
   <title>{% if title %}{{ title }} - {% endif %}{{ site.title }}</title>
