@@ -11,7 +11,7 @@ module.exports = (config) => {
   config.addDataExtension('yml', (contents) => yaml.safeLoad(contents));
 
   config.addPassthroughCopy('./src/build/');
-  config.addPassthroughCopy({ './src/assets/images/': 'images' });
+  config.addPassthroughCopy({ './src/images/': 'images' });
   config.addPassthroughCopy('./src/robots.txt');
 
   if (process.env.ELEVENTY_ENV === 'development') {

@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const svgToMiniDataURI = require('mini-svg-data-uri');
 
 module.exports = {
-  entry: './src/assets/js/index.js',
+  entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, './src/build'),
   },
