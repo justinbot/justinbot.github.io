@@ -2,54 +2,11 @@
 layout: base.njk
 ---
 
-{% from 'widgets/common.njk' import link %}
-{% from 'widgets/social.njk' import social_button, social_icon %}
-
 <section class="container mx-auto p-4 md:p-8">
   <div class="grid gap-8 md:gap-16">
-    <article class="gap-4 md:gap-8">
-      <img src="/images/justin_carlson.svg" alt="{{ site.title }}" class="my-2 md:my-8 h-16">
-      <p class="text-xl">
-        {{ site.description }}
-      </p>
-    </article>
-
-    <article class="p-4 md:p-8 border-2 border-r-4 border-b-4 rounded">
-      <h1 class="text-3xl font-serif font-bold">
-        Software
-      </h1>
-      <p class="text-lg pb-6">
-        Senior Software Engineer at {{ link(url='https://www.watchguard.com/', label='WatchGuard') }}
-      </p>
-      <div class="inline-grid md:grid-cols-2 gap-4">
-        {% for s in [socials.github, socials.linkedin] %}
-          {{ social_button(url=s.url, icon=s.icon, label=s.label) }}
-        {% endfor %}
-      </div>
-    </article>
-
-    <article class="p-4 md:p-8 border-2 border-r-4 border-b-4 rounded">
-      <h1 class="text-3xl font-serif font-bold">
-        Art
-      </h1>
-      <p class="text-lg pb-8">
-        Excessively detailed 3D renders, mostly using {{ link(url='https://www.blender.org/', label='Blender') }}
-      </p>
-      <div class="inline-grid md:grid-cols-2 gap-4">
-        {% for s in [socials.artstation] %}
-          {{ social_button(url=s.url, icon=s.icon, label=s.label) }}
-        {% endfor %}
-      </div>
-    </article>
-
-    <article class="p-4 md:p-8 border-2 border-r-4 border-b-4 rounded">
-      <h1 class="text-3xl font-serif font-bold">
-        Contact
-      </h1>
-      <p class="text-lg">
-        Lick a virtual envelope and send it to <strong>{{ link(url=socials.email.url, label=socials.email.label) }}</strong>
-      </p>
-    </article>
-
+    {% include 'home/title.njk' %}
+    {% include 'home/software.njk' %}
+    {% include 'home/art.njk' %}
+    {% include 'home/contact.njk' %}
   </div>
 </section>

@@ -1,0 +1,11 @@
+{% from 'widgets/common.njk' import link %}
+
+<article class="p-4 md:p-8 border-2 border-r-4 border-b-4 rounded">
+  <h1 class="text-3xl font-serif font-bold">
+    Contact
+  </h1>
+  <p class="text-lg">
+    Lick a virtual envelope and send it to
+    <strong>{{ link(url=socials.email.url, label=socials.email.label) }}</strong>
+  </p>
+</article>
