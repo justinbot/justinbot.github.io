@@ -12,7 +12,7 @@ module.exports = {
     rules: [
       // Compiling styles
       {
-        test: /\.css$/,
+        test: /.s?css$/,
         exclude: /node_modules/,
         use: [
           MiniCssExtractPlugin.loader,
