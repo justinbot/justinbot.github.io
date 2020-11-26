@@ -1,11 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  future: {
-    purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true,
-    defaultLineHeights: true,
-  },
   purge: {
     content: [
       './src/**/*.njk',
@@ -14,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#2aa198',
-        'secondary': '#ff6565',
+        primary: '#2aa198',
+        secondary: '#ff6565',
       },
       fontFamily: {
         sans: [
@@ -27,14 +22,12 @@ module.exports = {
           ...defaultTheme.fontFamily.serif,
         ],
       },
-      borderWidth: {
-        '16': '16px',
-        '32': '32px',
+      transitionDuration: {
+        DEFAULT: '150ms',
+      },
+      transitionTimingFunction: {
+        DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
       },
     },
   },
-  variants: {
-    borderWidth: ['responsive', 'hover', 'focus'],
-  },
-  plugins: [],
 };
