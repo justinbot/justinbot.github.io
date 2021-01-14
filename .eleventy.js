@@ -8,7 +8,7 @@ module.exports = (config) => {
   config.setTemplateFormats(['njk']);
 
   // Support YAML data
-  config.addDataExtension('yml', (contents) => yaml.safeLoad(contents));
+  config.addDataExtension('yaml', (contents) => yaml.safeLoad(contents));
 
   config.addPassthroughCopy('./src/build/');
   config.addPassthroughCopy({ './src/images/': 'images' });
