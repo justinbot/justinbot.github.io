@@ -1,19 +1,17 @@
-{% from 'widgets/common.njk' import link %}
-{% from 'widgets/social.njk' import social_icon %}
-
-<footer>
-  <div class="container mx-auto p-4 md:p-8 text-gray-600">
+<footer class="bg-gray-100 text-gray-500 border-t border-gray-200">
+  <div class="container mx-auto p-4 md:p-8">
     <div class="flex gap-4 pb-4">
       {% for k, s in socials %}
-        {{ social_icon(url=s.url, icon=s.icon, label=s.label) }}
+        <a href="{{ s.url }}" class="icon-button">
+          <i class="{{ s.icon }} fa-fw fa-lg"></i>
+        </a>
       {% endfor %}
     </div>
     <p class="pb-1">
-      {{ link(url=site.source_url, label='Source code') }}
-      is licensed MIT
+      <a class="link" href="{{ site.source_url }}">Source code</a> is licensed MIT
     </p>
     <p class="pb-1">
-      Content is &copy; 2020 Justin Carlson
+      Content is &copy; 2021 Justin Carlson
     </p>
   </div>
 </footer>

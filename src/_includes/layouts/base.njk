@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="{{ site.lang }}">
   {% include 'head.njk' %}
-  {% include 'nav.njk' %}
-  <body class="antialias text-gray-800">
-    <main class="min-h-screen">
+  <body class="bg-white text-gray-800 text-base">
+    <main class="min-h-screen mb-32 md:mb-64">
+      {% include 'nav.njk' %}
       {{ content | safe }}
     </main>
     {% include 'footer.njk' %}
