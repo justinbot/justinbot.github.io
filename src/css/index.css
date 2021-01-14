@@ -8,3 +8,21 @@
 @import 'tailwindcss/components';
 
 @import 'tailwindcss/utilities';
+
+@layer components {
+  .button {
+    @apply px-4 py-2 text-center text-primary bg-primary bg-opacity-10 hover:bg-opacity-25 focus:bg-opacity-25 rounded-lg transition;
+  }
+
+  .icon-button {
+    @apply p-2 text-center text-gray-500 bg-gray-500 bg-opacity-10 hover:bg-opacity-25 focus:bg-opacity-25 rounded-xl transition;
+  }
+
+  .link {
+    @apply text-primary hover:underline focus:underline;
+  }
+
+  .card {
+    @apply p-4 md:p-6 bg-gray-50 rounded-2xl;
+  }
+}

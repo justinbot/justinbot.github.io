@@ -1,14 +1,14 @@
-{% from 'widgets/social.njk' import social_icon %}
-
-<nav class="text-gray-600">
+<nav class="mb-8 md:mb-16 border-b border-gray-200">
   <div class="container mx-auto px-4 md:px-8 py-4">
     <div class="flex items-center justify-between flex-wrap">
-      <a href="/">
+      <a href="/" class="transform hover:scale-125 transition">
         <img src="/images/favicon.svg" alt="Justin Carlson" class="h-8 w-8">
       </a>
       <div class="flex gap-4">
         {% for k, s in socials %}
-          {{ social_icon(url=s.url, icon=s.icon, label=s.label) }}
+          <a href="{{ s.url }}" class="icon-button">
+            <i class="{{ s.icon }} fa-fw fa-lg"></i>
+          </a>
         {% endfor %}
       </div>
     </div>
