@@ -1,5 +1,35 @@
 neon_ride:
   url: https://www.artstation.com/artwork/nQ1xwr
-  image: images/art/neon_ride_showcase.jpg
+  image: images/art/neon_ride_thumb.jpg
   title: Neon Ride
+  year: 2018
+
+suspicious_activity:
+  url: https://www.artstation.com/artwork/DxO8xy
+  image: images/art/suspicious_activity_thumb.jpg
+  title: Suspicious Activity
   year: 2019
+
+dig:
+  url: https://www.artstation.com/artwork/rRPnAE
+  image: images/art/dig_thumb.jpg
+  title: Dig
+  year: 2019
+
+one_armed_bandit:
+  url: https://www.artstation.com/artwork/XBxk2w
+  image: images/art/one_armed_bandit_thumb.jpg
+  title: One Armed Bandit
+  year: 2019
+
+crash_landing:
+  url: https://www.artstation.com/artwork/lV8nDz
+  image: images/art/crash_landing_thumb.jpg
+  title: Crash Landing
+  year: 2019
+
+null_hypothesis:
+  url: https://www.artstation.com/artwork/D5ELBe
+  image: images/art/null_hypothesis_thumb.jpg
+  title: Null Hypothesis
+  year: 2020
