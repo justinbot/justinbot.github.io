@@ -9,6 +9,6 @@ module.exports = merge(common, {
   watch: true,
   watchOptions: {
     ignored: /node_modules/,
-    aggregateTimeout: 200,
+    aggregateTimeout: 600,
   },
 });
