@@ -57,7 +57,7 @@ wg_url: https://www.watchguard.com/
       <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
         {% for a in [art.null_hypothesis, art.crash_landing, art.one_armed_bandit, art.dig, art.suspicious_activity, art.neon_ride] %}
         <a href="{{ a.url }}" class="group transform hover:scale-105 transition">
-          <img src="{{ a.image }}" alt="{{ a.title }}" class="w-full md:w-96 rounded-lg shadow group-hover:shadow-lg transition">
+          <img src="{{ a.image }}" alt="{{ a.title }}" class="w-full md:w-96 rounded-lg shadow transition">
           <div class="pt-1 text-sm"><i>{{ a.title }}</i>, {{ a.year }}</div>
         </a>
         {% endfor %}

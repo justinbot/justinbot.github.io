@@ -15,11 +15,7 @@
   }
 
   .button {
-    @apply px-4 py-2 text-center text-primary bg-primary bg-opacity-10 hover:bg-opacity-25 focus:bg-opacity-25 border-2 border-primary border-opacity-25 rounded-lg transition;
-  }
-
-  .icon-button {
-    @apply text-midnight-400 hover:text-primary focus:text-primary transition;
+    @apply px-8 py-2 text-center text-primary bg-primary bg-opacity-10 hover:bg-opacity-25 focus:bg-opacity-25 border-2 border-primary border-opacity-25 rounded-lg shadow-sm transition;
   }
 
   .link {
