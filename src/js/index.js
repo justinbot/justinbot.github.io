@@ -14,4 +14,4 @@ fontawesome.library.add(faEnvelope);
 fontawesome.dom.watch();
 
 // Easter egg :^)
-console.log('%c>>> Taking a look under the hood? Check out the source code: https://github.com/justinbot/justinbot.github.io', 'background: #2aa198; color: #000000');
+console.log('%c>>> Taking a look under the hood? Check out the source code: https://github.com/justinbot/justinbot.github.io', 'background: #000000; color: #33d6ab');

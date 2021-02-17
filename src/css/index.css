@@ -10,19 +10,15 @@
 @import 'tailwindcss/utilities';
 
 @layer components {
-  .button {
-    @apply px-4 py-2 text-center text-primary bg-primary bg-opacity-10 hover:bg-opacity-25 focus:bg-opacity-25 rounded-lg transition;
+  .heading {
+    @apply mb-2 text-2xl text-midnight-400 font-serif font-bold;
   }
 
-  .icon-button {
-    @apply p-2 text-center text-gray-500 bg-gray-500 bg-opacity-10 hover:bg-opacity-25 focus:bg-opacity-25 rounded-xl transition;
+  .button {
+    @apply px-8 py-2 text-center text-primary bg-primary bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20 border-2 border-primary border-opacity-20 hover:border-opacity-60 focus:border-opacity-60 rounded-lg shadow-sm transition;
   }
 
   .link {
     @apply text-primary hover:underline focus:underline;
-  }
-
-  .card {
-    @apply p-4 md:p-6 bg-gray-50 rounded-2xl;
   }
 }

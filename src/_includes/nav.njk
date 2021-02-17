@@ -1,4 +1,4 @@
-<nav class="mb-8 md:mb-16 border-b border-gray-200">
+<nav class="mb-8 md:mb-16 text-midnight-200 border-b-2 border-midnight-500 border-opacity-50 shadow-md">
   <div class="container mx-auto px-4 md:px-8 py-4">
     <div class="flex items-center justify-between flex-wrap">
       <a href="/" class="transform hover:scale-125 transition">
@@ -6,7 +6,7 @@
       </a>
       <div class="flex gap-4">
         {% for k, s in socials %}
-          <a href="{{ s.url }}" class="icon-button">
+          <a href="{{ s.url }}" class="text-midnight-400 hover:text-opacity-50 focus:text-opacity-50 transition">
             <i class="{{ s.icon }} fa-fw fa-lg"></i>
           </a>
         {% endfor %}
