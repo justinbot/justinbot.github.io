@@ -3,7 +3,6 @@ import { faArtstation, faGithub, faLinkedin } from '@fortawesome/free-brands-svg
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import '../css/index.css';
-import '../images/favicon.svg'
 
 // Don't inject CSS, we include it.
 fontawesome.config.autoAddCss = false;
