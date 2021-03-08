@@ -11,7 +11,7 @@
 
 @layer components {
   .heading {
-    @apply mb-2 text-2xl text-midnight-400 font-serif font-bold;
+    @apply mb-2 text-2xl text-midnight-100 font-serif font-bold tracking-wide;
   }
 
   .button {
@@ -20,5 +20,9 @@
 
   .link {
     @apply text-primary hover:underline focus:underline;
+  }
+
+  .card {
+    @apply leading-snug;
   }
 }

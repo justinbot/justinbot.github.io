@@ -1,6 +1,6 @@
 import * as fontawesome from '@fortawesome/fontawesome-svg-core';
 import { faArtstation, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 import '../css/index.css';
 
@@ -9,7 +9,7 @@ fontawesome.config.autoAddCss = false;
 
 // Only add icons we use to reduce bundle size.
 fontawesome.library.add(faArtstation, faGithub, faLinkedin);
-fontawesome.library.add(faEnvelope);
+fontawesome.library.add(faEnvelope, faPaperPlane);
 fontawesome.dom.watch();
 
 // Easter egg :^)

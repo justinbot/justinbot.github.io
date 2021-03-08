@@ -1,0 +1,19 @@
+{% set wg_url = 'https://www.watchguard.com/wgrd-about' %}
+
+<section id="software">
+  <h1 class="heading">Software</h1>
+  <p class="mb-2 card">
+    I'm currently a Senior Software Engineer at <a class="link" href="{{ wg_url }}">WatchGuard Technologies</a>.
+  </p>
+  <p class="mb-8 leading-snug">
+    My open-source projects (like the website you're looking at right now) are on <a class="link" href="{{ socials.github.url }}">{{ socials.github.label }}</a>.
+  </p>
+  <div class="flex flex-col md:flex-row gap-4">
+    {% for s in [socials.github, socials.linkedin] %}
+    <a href="{{ s.url }}" class="button text-lg font-bold">
+      <i class="{{ s.icon }} fa-lg mr-2"></i>
+      {{ s.label }}
+    </a>
+    {% endfor %}
+  </div>
+</section>
