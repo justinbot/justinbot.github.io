@@ -15,14 +15,10 @@
   }
 
   .button {
-    @apply px-8 py-2 text-center text-primary bg-primary bg-opacity-0 hover:bg-opacity-20 focus:bg-opacity-20 border-2 border-primary border-opacity-20 hover:border-opacity-80 focus:border-opacity-80 rounded-md shadow-sm transition;
+    @apply px-8 py-2 text-center text-primary bg-primary bg-opacity-5 hover:bg-opacity-20 focus:bg-opacity-20 border-2 border-primary border-opacity-20 hover:border-opacity-80 focus:border-opacity-80 rounded-md shadow-sm transition;
   }
 
   .link {
     @apply text-primary hover:underline focus:underline;
-  }
-
-  .card {
-    @apply leading-snug;
   }
 }
