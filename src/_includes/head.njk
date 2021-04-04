@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   {% if build.environment == 'production' %}
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; img-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://gc.zgo.at; img-src 'self' https://justinbot.goatcounter.com/count; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com;">
   {% endif %}
 
   <link rel="icon" href="/images/favicon.ico">
@@ -23,4 +23,6 @@
 
   <script src="/build/vendor.js"></script>
   <script src="/build/main.js"></script>
+
+  <script data-goatcounter="https://justinbot.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
 </head>
