@@ -24,5 +24,7 @@
   <script src="/build/vendor.js"></script>
   <script src="/build/main.js"></script>
 
-  <script data-goatcounter="https://justinbot.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
+  {% if build.environment == 'production' %}
+    <script data-goatcounter="https://justinbot.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
+  {% endif %}
 </head>
