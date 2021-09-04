@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - 12
 before_script:
-  npm install
+  npm clean-install
 script: npm run release
 deploy:
   provider: pages
