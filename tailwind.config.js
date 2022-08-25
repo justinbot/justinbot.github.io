@@ -2,17 +2,15 @@ const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: {
-    content: [
-      './src/**/*.njk',
-    ],
-  },
+  content: [
+    './src/**/*.njk',
+  ],
   theme: {
     extend: {
       colors: {
         primary: '#74c7ad',
         secondary: '#ff6565',
-        gray: colors.coolGray,
+        gray: colors.gray,
         midnight: {
           900: '#0e1526',
           800: '#121b2e',
