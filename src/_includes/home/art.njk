@@ -8,7 +8,11 @@
   <p class="mt-2">
     Sometimes I post completed works to <a class="link" href="{{ socials.artstation.url }}">{{ socials.artstation.label }}</a>.
   </p>
-  <a href="{{ art.neon_ride.url }}">
-    <img src="images/art/neon_ride_showcase.jpg" alt="Showcase" class="w-full md:w-80 rounded-md mt-8 transform hover:scale-105 transition">
-  </a>
+  <div class="grid grid-cols-4 md:grid-cols-8 gap-4 mt-8">
+    {% for k, a in art %}
+    <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ a.image }}" alt="{{ a.title }}" class="w-full md:w-80 rounded-lg transform hover:scale-110 transition">
+    </a>
+    {% endfor %}
+  </div>
 </section>
