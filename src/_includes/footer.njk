@@ -1,8 +1,8 @@
 <footer class="text-midnight-400 bg-midnight-900 border-t-2 border-midnight-600 shadow-inner">
-  <div class="container mx-auto p-4 md:p-8">
-    <div class="flex gap-4 pb-4">
+  <div class="container mx-auto p-2 md:p-8">
+    <div class="flex gap-2 pb-2">
       {% for k, s in socials %}
-        <a href="{{ s.url }}" class="text-midnight-400 hover:text-midnight-200 focus:text-midnight-200 transition">
+        <a href="{{ s.url }}" class="p-2 rounded-full text-midnight-400 hover:bg-black hover:text-midnight-200 focus:text-midnight-200 transition">
           <i class="{{ s.icon }} fa-fw fa-lg"></i>
         </a>
       {% endfor %}
