@@ -9,8 +9,8 @@
     "webpack:prod": "NODE_ENV=production webpack --config webpack.prod.js",
     "eleventy:dev": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
     "eleventy:prod": "NODE_ENV=production ELEVENTY_ENV=production npx @11ty/eleventy",
-    "dev": "npm run clean && npm run webpack:dev & npm run eleventy:dev",
-    "release": "npm run clean && npm run webpack:prod && npm run eleventy:prod"
+    "dev": "yarn clean && yarn webpack:dev & yarn eleventy:dev",
+    "build": "yarn clean && yarn webpack:prod && yarn eleventy:prod"
   },
   "repository": {
     "type": "git",
