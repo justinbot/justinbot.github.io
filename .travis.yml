@@ -1,9 +1,9 @@
 language: node_js
 node_js:
-  - 12
+  - 16
 before_script:
-  npm clean-install
-script: npm run release
+  yarn clean-install
+script: yarn build
 deploy:
   provider: pages
   skip_cleanup: true
