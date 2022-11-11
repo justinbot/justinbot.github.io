@@ -2,17 +2,19 @@
 
 <section id="art">
   <h1 class="heading">Art</h1>
-  <p>
-    I'm an experienced amateur 3D artist and longtime <a class="link" href="{{ blender_url }}">Blender</a> enthusiast.
-  </p>
-  <p class="mt-2">
-    Sometimes I post completed works to <a class="link" href="{{ socials.artstation.url }}">{{ socials.artstation.label }}</a>.
-  </p>
-  <div class="grid grid-cols-4 md:grid-cols-8 gap-4 mt-8">
-    {% for k, a in art %}
-    <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer">
-      <img src="{{ a.image }}" alt="{{ a.title }}" class="w-full md:w-80 rounded-lg transform hover:scale-110 transition">
-    </a>
-    {% endfor %}
+  <div class="card">
+    <p>
+      I'm an experienced amateur 3D artist and longtime <a class="link" href="{{ blender_url }}">Blender</a> enthusiast.
+    </p>
+    <p class="mt-2">
+      Sometimes I post completed works to <a class="link" href="{{ socials.artstation.url }}">{{ socials.artstation.label }}</a>.
+    </p>
+    <div class="grid grid-cols-4 md:grid-cols-8 gap-4 mt-8">
+      {% for k, a in art %}
+      <a href="{{ a.url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ a.image }}" alt="{{ a.title }}" class="w-full md:w-80 rounded-lg transform hover:scale-110 transition">
+      </a>
+      {% endfor %}
+    </div>
   </div>
 </section>
