@@ -19,7 +19,9 @@
   }
 
   .button {
-    @apply px-8 py-2 text-center text-primary bg-primary bg-opacity-5 hover:bg-opacity-20 focus:bg-opacity-20 border-2 border-primary border-opacity-20 hover:border-opacity-80 focus:border-opacity-80 rounded-md shadow-sm transition;
+    @apply px-8 py-2 text-center
+      text-midnight-900 bg-gradient-to-br from-primary via-primary to-primary-light
+      hover:opacity-60 focus:opacity-60 rounded-xl shadow-md transition;
   }
 
   .link {
