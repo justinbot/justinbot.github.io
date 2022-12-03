@@ -33,18 +33,6 @@ module.exports = {
         exclude: /node_modules/,
         use: 'babel-loader',
       },
-      // Load SVGs
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              generator: (content) => svgToMiniDataURI(content.toString()),
-            },
-          },
-        ],
-      },
     ]
   },
   optimization: {
