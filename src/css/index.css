@@ -9,6 +9,10 @@
 
 @import 'tailwindcss/utilities';
 
+:root {
+  color-scheme: dark;
+}
+
 @layer components {
   .heading {
     @apply text-3xl text-midnight-100 font-serif font-bold tracking-wide mb-2 pb-2;
