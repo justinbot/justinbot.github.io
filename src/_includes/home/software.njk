@@ -1,19 +1,21 @@
 {% set element_url = 'https://element.io/' %}
 
 <section id="software">
-  <h1 class="heading">Software</h1>
-  <p>
-    I'm currently a Software Engineer at <a class="link" href="{{ element_url }}">Element</a>.
-  </p>
-  <p class="mt-2">
-    My open source projects (like the website you're looking at right now) are on <a class="link" href="{{ socials.github.url }}">{{ socials.github.label }}</a>.
-  </p>
-  <div class="flex flex-col md:flex-row gap-4 mt-8">
-    {% for s in [socials.github, socials.linkedin] %}
-    <a href="{{ s.url }}" class="button text-lg font-bold">
-      <i class="{{ s.icon }} fa-lg mr-2"></i>
-      {{ s.label }}
-    </a>
-    {% endfor %}
+  <div class="card">
+    <h1 class="heading">Software</h1>
+    <p>
+      I'm a Software Engineer at <a class="link" href="{{ element_url }}">Element</a>.
+    </p>
+    <p class="mt-2">
+      My open source projects (like the website you're looking at right now) are on <a class="link" href="{{ socials.github.url }}">{{ socials.github.label }}</a>.
+    </p>
+    <div class="flex flex-col md:flex-row gap-4 mt-8">
+      {% for s in [socials.github, socials.linkedin] %}
+      <a href="{{ s.url }}" class="button text-lg font-bold">
+        <i class="{{ s.icon }} fa-lg mr-2"></i>
+        {{ s.label }}
+      </a>
+      {% endfor %}
+    </div>
   </div>
 </section>

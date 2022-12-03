@@ -4,11 +4,11 @@ A personal website built with [Eleventy](https://www.11ty.dev/) and [Tailwind CS
 ## Usage
 
 ```sh
-npm run dev
+yarn dev
 ```
 Runs the development server with live reload.
 
 ```sh
-npm run release
+yarn build
 ```
 Outputs an optimized build for distribution.

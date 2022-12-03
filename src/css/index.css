@@ -11,14 +11,40 @@
 
 @layer components {
   .heading {
-    @apply mb-2 text-2xl text-midnight-100 font-serif font-bold tracking-wide;
+    @apply text-3xl text-midnight-100 font-serif font-bold tracking-wide mb-2 pb-2;
+  }
+
+  .card {
+    @apply bg-midnight-900 rounded-2xl p-4 md:p-8;
   }
 
   .button {
-    @apply px-8 py-2 text-center text-primary bg-primary bg-opacity-5 hover:bg-opacity-20 focus:bg-opacity-20 border-2 border-primary border-opacity-20 hover:border-opacity-80 focus:border-opacity-80 rounded-md shadow-sm transition;
+    @apply px-8 py-2 text-center
+      text-midnight-900 bg-gradient-to-br from-primary via-primary to-primary-light
+      hover:opacity-60 focus:opacity-60 rounded-xl shadow-md transition;
   }
 
   .link {
     @apply text-primary hover:underline focus:underline;
+  }
+
+  .bubble-sent {
+    border: 12px solid;
+    border-image-source: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='256' height='256' version='1.1' viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m209.85 0c18.398 0 33.209 14.808 33.209 33.206v189.58c0 1.1644-0.0632 2.3128-0.17896 3.4459-0.0423 4.1576 0.24427 10.577 2.0257 15.866 2.0686 6.1418 7.299 10.53 11.091 12.07-9.187 3.3767-17.942 0.30198-25.861-5.0943-5.6068 4.3264-12.625 6.922-20.287 6.922h-176.64c-18.398 0-33.209-14.812-33.209-33.209v-189.59c0-18.398 14.812-33.206 33.209-33.206z' fill='%23238768' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+    border-image-slice: 25% fill;
+    border-image-width: 256px;
+    border-image-repeat: round;
+
+    @apply pr-2;
+  }
+
+  .bubble-received {
+    border: 12px solid;
+    border-image-source: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='256' height='256' version='1.1' viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m46.147 0c-18.398 0-33.209 14.808-33.209 33.206v188.72 0.86049c0 1.1644 0.0632 2.3128 0.17896 3.4459 0.0423 4.1576-0.24427 10.577-2.0257 15.866-2.0686 6.1418-7.299 10.53-11.091 12.07 9.187 3.3767 17.942 0.30198 25.861-5.0943 5.6068 4.3264 12.625 6.922 20.287 6.922h176.64c18.398 0 33.209-14.812 33.209-33.209v-189.59c0-18.398-14.812-33.206-33.209-33.206z' fill='%23282842' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
+    border-image-slice: 25% fill;
+    border-image-width: 256px;
+    border-image-repeat: round;
+
+    @apply pl-2;
   }
 }
